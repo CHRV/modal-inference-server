@@ -1,0 +1,19 @@
+# yaml-language-server: $schema=../src/modal_inference_server/config.schema.json
+#
+#   modal-sglang show   --from examples/qwen3-8b.yaml
+#   modal-sglang deploy --from examples/qwen3-8b.yaml --min-containers 1 -- --context-length 65536
+#
+# `modal:` is where and how it runs; `sglang:` is a plain `sglang serve`
+# config (the same keys SGLang's own `--config` file takes).
+modal:
+  gpu: L40S
+  secrets: [huggingface]
+  target_concurrency: 16
+  scaledown_window: 300
+sglang:
+  model-path: Qwen/Qwen3-8B
+  reasoning-parser: qwen3
+  tool-call-parser: qwen3_coder
+  context-length: 32768
+  mem-fraction-static: 0.85
+  enable-metrics: true
