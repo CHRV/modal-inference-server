@@ -297,3 +297,7 @@ resolution and merge order, every bundled cookbook preset against the catalog, C
 option generation, and one test that unpickles the server class in a process where
 this library is deliberately unimportable. The container never has the library
 installed, so that has to hold.
+
+## License
+
+MIT — see [LICENSE](LICENSE).

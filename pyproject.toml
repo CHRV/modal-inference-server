@@ -3,6 +3,8 @@ name = "modal-inference-server"
 version = "0.1.0"
 description = "Serve SGLang models on Modal"
 readme = "README.md"
+license = "MIT"
+license-files = ["LICENSE"]
 authors = [
     { name = "CHRV", email = "c.h.onguene@hotmail.com" }
 ]
